@@ -1,0 +1,38 @@
+
+
+.card {
+    margin: 20px;
+    width: 18rem;
+    background-color: #41f1b6;
+}
+.card_body .row {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+  
+.card-title {
+    margin-bottom: 15px;
+}
+  
+#closeIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+.card-body {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#logo {
+    margin-right: 20px;
+    width: 2rem;
+}
