@@ -155,3 +155,66 @@ form {
   overflow: hidden;
   transition: all 0.2s;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.title body {
+  padding: 0;
+  margin: 0; 
+  height: 100vh;
+  background: #18191f;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title ul {
+  position: relative;
+  display: flex;
+}
+
+.title li {
+  list-style: none;
+}
+
+.title label {
+  position: relative;
+}
+
+.title input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  z-index: 100;
+}
+
+.title div {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  color: #555;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.title input[type="checkbox"]:checked ~ div {
+  color: var(--color-primary);
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

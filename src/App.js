@@ -47,6 +47,8 @@ export default function App() {
           };
           if(!cities.find(e => e.id === city.id)){
             setCities(oldCities => [...oldCities, city]);
+          }else {
+            alert("City already added");
           }
         } else {
           alert("City not found");
